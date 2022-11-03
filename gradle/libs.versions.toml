@@ -3,7 +3,11 @@ androidxActivity = "1.6.0"
 androidxComposeBom = "2022.10.00"
 androidxComposeCompiler = "1.3.2"
 androidGradlePlugin = "7.3.1"
+detekt = "1.22.0-RC2"
 kotlin_version = "1.7.20"
+koin = "3.2.2"
+ktLint = "10.3.0"
+napierVersion = "2.6.1"
 
 
 [libraries]
@@ -20,8 +24,16 @@ androidx-compose-ui-testManifest = { group = "androidx.compose.ui", name = "ui-t
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 androidx-compose-ui-util = { group = "androidx.compose.ui", name = "ui-util" }
+koin-core = { group = "io.insert-koin", name = "koin-core" , version.ref = "koin"}
+koin-test = { group = "io.insert-koin", name = "koin-test" , version.ref = "koin"}
+koin-android = { group = "io.insert-koin", name = "koin-android" , version.ref = "koin"}
+logger-napier = { group = "io.github.aakira" , name = "napier" ,version.ref = "napierVersion"}
+
+
 
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+tools-detekt = { id = "io.gitlab.arturbosch.detekt",version.ref = "detekt" }
+tools-klint = {id = "org.jlleitschuh.gradle.ktlint" , version.ref = "ktLint"}

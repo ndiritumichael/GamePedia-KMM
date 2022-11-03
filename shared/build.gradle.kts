@@ -2,6 +2,8 @@ plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
+    id("io.gitlab.arturbosch.detekt")
+    id("com.google.devtools.ksp")
 }
 
 kotlin {
@@ -20,15 +22,28 @@ kotlin {
             baseName = "shared"
         }
     }
-    
+
     sourceSets {
-        val commonMain by getting
-        val commonTest by getting {
+
+        val commonMain by getting {
             dependencies {
+
+                api(libs.koin.core)
+                api(libs.logger.napier)
+            }
+        }
+        val commonTest by getting {
+
+            dependencies {
+                api(libs.koin.test)
                 implementation(kotlin("test"))
             }
         }
-        val androidMain by getting
+        val androidMain by getting {
+            dependencies {
+                api(libs.koin.android)
+            }
+        }
         val androidTest by getting
         val iosX64Main by getting
         val iosArm64Main by getting
