@@ -29,6 +29,8 @@ kotlin {
             dependencies {
 
                 api(libs.koin.core)
+                implementation(libs.ktor.client.core)
+                implementation(libs.ktor.client.logging)
                 api(libs.logger.napier)
             }
         }
@@ -42,6 +44,7 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 api(libs.koin.android)
+                implementation(libs.ktor.client.okhttp)
             }
         }
         val androidTest by getting
@@ -49,6 +52,9 @@ kotlin {
         val iosArm64Main by getting
         val iosSimulatorArm64Main by getting
         val iosMain by creating {
+            dependencies {
+                implementation(libs.ktor.client.darwin)
+            }
             dependsOn(commonMain)
             iosX64Main.dependsOn(this)
             iosArm64Main.dependsOn(this)

@@ -90,7 +90,6 @@
 				FB6E6CD8D1F338FA4BFD2B5B /* Pods-GamePediaiOS.debug.xcconfig */,
 				E3843E7C18FB776F086D54F0 /* Pods-GamePediaiOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -323,6 +322,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GamePediaiOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GamePediaiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +343,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GamePediaiOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GamePediaiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

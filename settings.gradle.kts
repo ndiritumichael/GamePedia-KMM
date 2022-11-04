@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "GamePedia"
 include(":androidApp")
 include(":shared")
+include(":domain")
