@@ -23,7 +23,7 @@ A few things you can currently do with GamePedia:
 - Follow the [KMM Guide by Jetbrains](https://kotlinlang.org/docs/kmm-overview.html) for getting started building a project with KMM.
 - Install Kotlin Multiplatform Mobile plugin in Android Studio
 - Clone or download the repo
-- Get your API Key from https://rawg.io/ and append it in the API-Key file 
+- Get your API Key from https://rawg.io/ and append it in the [API-Key](https://github.com/ndiritumichael/GamePedia-KMM/blob/ktor-setup/shared/src/commonMain/kotlin/com/devmike/gamepedia/Utils/Apikey.kt) file 
 - Rebuild Project
 - When opening iOS project remember to open `.xcworkspace` file (and not `.xcodeproj` one). 
 
