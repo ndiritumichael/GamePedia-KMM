@@ -43,4 +43,12 @@ dependencies {
     implementation(libs.androidx.compose.material.iconsExtended)
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.compose.runtime.lifecycle)
+    implementation(libs.coil.compose)
+    implementation(libs.landscapist.coil)
+    implementation(libs.landscapist.palette)
+    implementation(libs.compose.ratingbar)
+  //  implementation(libs.androidx.paging.runtime)
+    implementation(libs.androidx.paging.compose)
+    implementation(libs.koin.android.compose)
 }

@@ -7,15 +7,7 @@ struct ContentView: View {
     @State var greeting : String = " "
 
 	var body: some View {
-        VStack{
-            Text(greeting)
-            Text(greet).task {
-                greet2.greeting{ title, error in
-                    
-                    greeting = title ?? "no value found"
-                }
-            }
-        }
+     GamesNavigation()
     }
 }
 

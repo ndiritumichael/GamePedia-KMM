@@ -6,8 +6,10 @@ plugins {
     alias(libs.plugins.tools.klint)
     id("com.google.devtools.ksp") version "1.7.20-1.0.7"
     kotlin("android").version(libs.versions.kotlin.version).apply(false)
+
     kotlin("multiplatform").version(libs.versions.kotlin.version).apply(false)
     id("org.jetbrains.kotlin.jvm") version "1.7.20" apply false
+    kotlin("plugin.serialization") version libs.versions.kotlin.version
 }
 
 subprojects {

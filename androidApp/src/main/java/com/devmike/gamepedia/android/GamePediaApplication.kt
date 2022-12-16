@@ -10,7 +10,7 @@ import org.koin.core.logger.Level
 class GamePediaApplication : Application() {
     override fun onCreate() {
         super.onCreate()
-        initKoin {
+        initKoin(enableNetworkLogs = BuildConfig.DEBUG) {
             androidLogger(level = if (BuildConfig.DEBUG) Level.DEBUG else Level.NONE)
             androidContext(androidContext = this@GamePediaApplication)
         }
