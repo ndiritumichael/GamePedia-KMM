@@ -42,7 +42,7 @@ A few things you can currently do with GamePedia:
 <table>
   <tr>
     <td><img src="art/homeandroidlight.jpeg"></td>
-    <td><img src="art/scrolledandroidlight.jpeg"></td>
+    <td><img src="art/scrolledandroiddark.jpeg"></td>
     <td><img src="art/searchandroidlight.jpeg"></td>
   </tr>
 </table>
