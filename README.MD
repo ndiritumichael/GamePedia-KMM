@@ -16,6 +16,7 @@ The project includes a shared kotlin module which holds the networking layer res
 A few things you can currently do with GamePedia:
 * View Popular VideoGames
 * Search for any VideoGame
+* View Game Details 
 
 
 ## <a name="installation"></a> 🚗 Installation
